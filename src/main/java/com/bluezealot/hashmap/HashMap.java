@@ -2,7 +2,7 @@ package com.bluezealot.hashmap;
 
 
 public class HashMap implements Map<String, String>{
-    private int seed = 37;
+    private int seed = 173;
     private Bucket<String, String>[] localBuckets = new Bucket[seed + 1];
 
     @Override
