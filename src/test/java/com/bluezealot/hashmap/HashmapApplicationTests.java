@@ -63,7 +63,7 @@ class HashmapApplicationTests {
 	void timeContestSearch(){
 		long startTime = System.nanoTime();
 		int randomNum = 0;
-		for(int i = 0; i < 1500000; i ++){
+		for(int i = 0; i < 10000000; i ++){
 			randomNum = ThreadLocalRandom.current().nextInt(0, TestDataSet.codes.size());
 			String key = TestDataSet.codes.get(randomNum);
 			searchTarget.get(key);
@@ -77,7 +77,7 @@ class HashmapApplicationTests {
 	void timeContestHash(){
 		long startTime = System.nanoTime();
 		int randomNum = 0;
-		for(int i = 0; i < 1500000; i ++){
+		for(int i = 0; i < 10000000; i ++){
 			randomNum = ThreadLocalRandom.current().nextInt(0, TestDataSet.codes.size());
 			String key = TestDataSet.codes.get(randomNum);
 			hashTarget.get(key);
