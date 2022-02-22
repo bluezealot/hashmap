@@ -11,17 +11,16 @@ public class KeyValueEntity <k extends Comparable,v> implements Comparable{
 
     @Override
     public boolean equals(Object o){
-        KeyValueEntity<k,v> target = (KeyValueEntity<k,v>)o;
-        return this.key.equals(target.key);
+        return false;
     }
 
     @Override
     public int hashCode(){
-        return key.hashCode();
+        return 0;
     }
 
     @Override
     public int compareTo(Object o) {
-        return key.compareTo(((KeyValueEntity)o).getKey());
+        return 0;
     }
 }
