@@ -12,11 +12,15 @@ public class SearchMap implements Map<String, String>{
 
     @Override
     public void add(String key, String value) {
-        
+        keyList.add(key);
+        valueList.add(value);
     }
 
     @Override
     public String get(String key) {
+        int index = keyList.indexOf(key);
+        if(index >= 0)
+            return valueList.get(index);
         return null;
     }
     

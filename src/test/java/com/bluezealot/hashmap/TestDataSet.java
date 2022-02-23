@@ -740,7 +740,7 @@ usCodes.add(new String[]{"986","	ID                  "});
 usCodes.add(new String[]{"989","	MI                  "});
 
 for(int i = 0; i < usCodes.size(); i ++){
-    // data.add(usCodes.get(i));
+    data.add(usCodes.get(i));
 }
 
 for(int i = 0; i < data.size(); i ++){
